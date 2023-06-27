@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/dac9dbf949.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>ITH Mart</title>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
+      <div class="container">
+        <h3><i class="fa-solid fa-store mr-2"></i></h3>
+        <a class="navbar-brand font-weight-bold" href="#">ITH Mart</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mr-3">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Beranda <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reseller</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Hubungi Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Bantuan</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          <div class="icon ml-3 mt-2">
+            <h5>
+              <i class="fa-sharp fa-solid fa-cart-shopping mr-2" data-toggle="tooltip" title="Keranjang Belanja"></i>
+              <i class="fa-solid fa-envelope mr-2" data-toggle="tooltip" title="Surat Masuk"></i>
+              <i class="fa-solid fa-bell mr-2" data-toggle="tooltip" title="Notifikasi"></i>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row mt-5 no-gutters">
+      <div class="col-md-2 bg-light">
+        <button class="btn btn-dark mt-4" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          <i class="fa-sharp fa-solid fa-list"></i>
+        </button>
+        <div class="collapse" id="collapseExample">
+          <ul class="list-group list-group-flush p-2 pt-4">
+            <li class="list-group-item bg-dark text-white"><i class="fa-sharp fa-solid fa-list mr-2"></i>Kategori Produk</li>
+            <li class="list-group-item"><i class="fa-sharp fa-solid fa-chevron-right mr-2"></i>Peralatan Elektronik</li>
+            <li class="list-group-item"><i class="fa-sharp fa-solid fa-chevron-right mr-2"></i>Aksesoris Elektronik</li>
+            <li class="list-group-item"><i class="fa-sharp fa-solid fa-chevron-right mr-2"></i>Fashion Pria</li>
+            <li class="list-group-item"><i class="fa-sharp fa-solid fa-chevron-right mr-2"></i>Fashion Wanita</li>
+            <li class="list-group-item"><i class="fa-sharp fa-solid fa-chevron-right mr-2"></i>Fashion Anak</li>
+            <li class="list-group-item"><i class="fa-sharp fa-solid fa-chevron-right mr-2"></i>Otomotif</li>
+            <li class="list-group-item"><i class="fa-sharp fa-solid fa-chevron-right mr-2"></i>Hobi dan Olahraga</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <div id="carouselExampleControls" class="carousel slide mt-4 ml-3 mr-2" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="slide/slide1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="slide/slide2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="slide/slide3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+        <h4 class="text-center font-weight-bold mt-5 mb-4">Produk Terbaru</h4>
+        <div class="row mx-auto mt-2">
+          <div class="card bg-light mr-2 ml-2" style="width: 17rem;">
+            <img src="produk/headphone.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Headphone</h5>
+              <p class="card-text">Headphone wireless tanpa kabel</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-alt"></i>
+              <i class="fa-regular fa-star"></i>
+              <div class="btn-group mt-2" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-warning" data-target="#produk1" data-toggle="modal">Detail</button>
+                <button type="button" class="btn btn-warning">Rp. 200.000</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-light mr-2 ml-2" style="width: 17rem;">
+            <img src="produk/jacket.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Jacket</h5>
+              <p class="card-text">Jacket dengan kulit buaya</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-alt"></i>
+              <i class="fa-regular fa-star"></i>
+              <div class="btn-group mt-2" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-warning" data-target="#produk2" data-toggle="modal">Detail</button>
+                <button type="button" class="btn btn-warning">Rp. 250.000</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-light mr-2 ml-2" style="width: 17rem;">
+            <img src="produk/kamera.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kamera</h5>
+              <p class="card-text">Kamera untuk memotret bulan</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-alt"></i>
+              <i class="fa-regular fa-star"></i>
+              <div class="btn-group mt-2" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-warning" data-target="#produk3" data-toggle="modal">Detail</button>
+                <button type="button" class="btn btn-warning">Rp. 3.000.000</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-light mr-2 ml-2" style="width: 17rem;">
+            <img src="produk/laptop.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Laptop</h5>
+              <p class="card-text">Laptop buat ngoding</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-alt"></i>
+              <i class="fa-regular fa-star"></i>
+              <div class="btn-group mt-2" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-warning" data-target="#produk4" data-toggle="modal">Detail</button>
+                <button type="button" class="btn btn-warning">Rp. 5.000.000</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mx-auto mt-2">
+            <div class="card bg-light mr-2 ml-2 mt-2" style="width: 17rem;">
+              <img src="produk/ssd.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">SSD</h5>
+                <p class="card-text">Bisa mabar valo</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-alt"></i>
+                <i class="fa-regular fa-star"></i>
+                <div class="btn-group mt-2" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-warning" data-target="#produk5" data-toggle="modal">Detail</button>
+                  <button type="button" class="btn btn-warning">Rp. 500.000</button>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-light mr-2 ml-2 mt-2" style="width: 17rem;">
+              <img src="produk/sdcard.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">SD card</h5>
+                <p class="card-text">Simpan datamu bro</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-alt"></i>
+                <i class="fa-regular fa-star"></i>
+                <div class="btn-group mt-2" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-warning" data-target="#produk6" data-toggle="modal">Detail</button>
+                  <button type="button" class="btn btn-warning">Rp. 75.000</button>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-light mr-2 ml-2 mt-2" style="width: 17rem;">
+              <img src="produk/speaker.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Speaker</h5>
+                <p class="card-text">Speaker dengan suara gokil</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-alt"></i>
+                <i class="fa-regular fa-star"></i>
+                <div class="btn-group mt-2" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-warning" data-target="#produk7" data-toggle="modal">Detail</button>
+                  <button type="button" class="btn btn-warning">Rp. 150.000</button>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-light mr-2 ml-2 mt-2" style="width: 17rem;">
+              <img src="produk/usb.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">USB</h5>
+                <p class="card-text">Universal Serial Bus</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-alt"></i>
+                <i class="fa-regular fa-star"></i>
+                <div class="btn-group mt-2" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-warning" data-target="#produk8" data-toggle="modal">Detail</button>
+                  <button type="button" class="btn btn-warning">Rp. 100.000</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="produk1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Detail Produk</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="produk/headphone.jpg" alt="hilang">
+              </div>
+              <div class="col-md-6">
+                <table class="table table-borderless">
+                  <tr>
+                    <th>Nama Produk</th>
+                    <td>Headphone</td>
+                  </tr>
+                  <tr>
+                    <th>Brand/Type</th>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th>Biaya ongkir</th>
+                    <td>Standard</td>
+                  </tr>
+                  <tr>
+                    <th>Rating</th>
+                    <td>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-alt"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Stock Produk</th>
+                    <td>100 Pcs</td>
+                  </tr>
+                  <tr>
+                    <th>Harga</th>
+                    <td>Rp. 200.000</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-dismiss="modal">Kembali</button>
+            <button type="button" class="btn btn-warning">Beli</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="produk2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Detail Produk</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="produk/jacket.jpg" alt="hilang">
+              </div>
+              <div class="col-md-6">
+                <table class="table table-borderless">
+                  <tr>
+                    <th>Nama Produk</th>
+                    <td>Jacket</td>
+                  </tr>
+                  <tr>
+                    <th>Brand/Type</th>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th>Biaya ongkir</th>
+                    <td>Standard</td>
+                  </tr>
+                  <tr>
+                    <th>Rating</th>
+                    <td>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-alt"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Stock Produk</th>
+                    <td>100 Pcs</td>
+                  </tr>
+                  <tr>
+                    <th>Harga</th>
+                    <td>Rp. 250.000</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-dismiss="modal">Kembali</button>
+            <button type="button" class="btn btn-warning">Beli</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="produk3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Detail Produk</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="produk/kamera.jpg" alt="hilang">
+              </div>
+              <div class="col-md-6">
+                <table class="table table-borderless">
+                  <tr>
+                    <th>Nama Produk</th>
+                    <td>Kamera</td>
+                  </tr>
+                  <tr>
+                    <th>Brand/Type</th>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th>Biaya ongkir</th>
+                    <td>Standard</td>
+                  </tr>
+                  <tr>
+                    <th>Rating</th>
+                    <td>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-alt"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Stock Produk</th>
+                    <td>100 Pcs</td>
+                  </tr>
+                  <tr>
+                    <th>Harga</th>
+                    <td>Rp. 3.000.000</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-dismiss="modal">Kembali</button>
+            <button type="button" class="btn btn-warning">Beli</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="produk4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Detail Produk</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="produk/laptop.jpg" alt="hilang">
+              </div>
+              <div class="col-md-6">
+                <table class="table table-borderless">
+                  <tr>
+                    <th>Nama Produk</th>
+                    <td>Laptop</td>
+                  </tr>
+                  <tr>
+                    <th>Brand/Type</th>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th>Biaya ongkir</th>
+                    <td>Standard</td>
+                  </tr>
+                  <tr>
+                    <th>Rating</th>
+                    <td>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-alt"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Stock Produk</th>
+                    <td>100 Pcs</td>
+                  </tr>
+                  <tr>
+                    <th>Harga</th>
+                    <td>Rp. 5.000.000</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-dismiss="modal">Kembali</button>
+            <button type="button" class="btn btn-warning">Beli</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="produk5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Detail Produk</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="produk/ssd.jpg" alt="hilang">
+              </div>
+              <div class="col-md-6">
+                <table class="table table-borderless">
+                  <tr>
+                    <th>Nama Produk</th>
+                    <td>SSD</td>
+                  </tr>
+                  <tr>
+                    <th>Brand/Type</th>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th>Biaya ongkir</th>
+                    <td>Standard</td>
+                  </tr>
+                  <tr>
+                    <th>Rating</th>
+                    <td>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-alt"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Stock Produk</th>
+                    <td>100 Pcs</td>
+                  </tr>
+                  <tr>
+                    <th>Harga</th>
+                    <td>Rp. 500.000</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-dismiss="modal">Kembali</button>
+            <button type="button" class="btn btn-warning">Beli</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="produk6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Detail Produk</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="produk/sdcard.jpg" alt="hilang">
+              </div>
+              <div class="col-md-6">
+                <table class="table table-borderless">
+                  <tr>
+                    <th>Nama Produk</th>
+                    <td>SD Card</td>
+                  </tr>
+                  <tr>
+                    <th>Brand/Type</th>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th>Biaya ongkir</th>
+                    <td>Standard</td>
+                  </tr>
+                  <tr>
+                    <th>Rating</th>
+                    <td>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-alt"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Stock Produk</th>
+                    <td>100 Pcs</td>
+                  </tr>
+                  <tr>
+                    <th>Harga</th>
+                    <td>Rp. 75.000</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-dismiss="modal">Kembali</button>
+            <button type="button" class="btn btn-warning">Beli</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="produk7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Detail Produk</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="produk/speaker.jpg" alt="hilang">
+              </div>
+              <div class="col-md-6">
+                <table class="table table-borderless">
+                  <tr>
+                    <th>Nama Produk</th>
+                    <td>Speaker</td>
+                  </tr>
+                  <tr>
+                    <th>Brand/Type</th>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th>Biaya ongkir</th>
+                    <td>Standard</td>
+                  </tr>
+                  <tr>
+                    <th>Rating</th>
+                    <td>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-alt"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Stock Produk</th>
+                    <td>100 Pcs</td>
+                  </tr>
+                  <tr>
+                    <th>Harga</th>
+                    <td>Rp. 150.000</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-dismiss="modal">Kembali</button>
+            <button type="button" class="btn btn-warning">Beli</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="produk8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Detail Produk</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="produk/usb.jpg" alt="hilang">
+              </div>
+              <div class="col-md-6">
+                <table class="table table-borderless">
+                  <tr>
+                    <th>Nama Produk</th>
+                    <td>USB</td>
+                  </tr>
+                  <tr>
+                    <th>Brand/Type</th>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th>Biaya ongkir</th>
+                    <td>Standard</td>
+                  </tr>
+                  <tr>
+                    <th>Rating</th>
+                    <td>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-alt"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Stock Produk</th>
+                    <td>100 Pcs</td>
+                  </tr>
+                  <tr>
+                    <th>Harga</th>
+                    <td>Rp. 100.000</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-dismiss="modal">Kembali</button>
+            <button type="button" class="btn btn-warning">Beli</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white p-5 mt-5">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>LAYANAN PELANGGAN</h5>
+          <ul>
+            <li>Pusat Bantuan</li>
+            <li>Cara Pembelian</li>
+            <li>Pengiriman</li>
+            <li>Cara Pengembalian</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>TENTANG KAMI</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid corrupti molestias totam odio quibusdam numquam nihil, dolorum ab eum nisi alias provident vel dolore cupiditate amet repellat voluptatibus repudiandae ut!</p>
+        </div>
+        <div class="col-md-3">
+          <h5>MITRA KERJASAMA</h5>
+          <ul>
+            <li>GRAB</li>
+            <li>GOJEK</li>
+            <li>JNE</li>
+            <li>PT. POS Indonesia</li>
+            <li>TIKI</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>HUBUNGI KAMI</h5>
+          <ul>
+            <li>027-1234-5487</li>
+            <li>customer@tokoith.com</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright bg-warning text-center font-weight-bold p-2">
+      <p>Developed by M. Fauzan Iskandar Copyright <i class="far fa-copyright"></i> 2023</p>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+    <script>
+      $(function() {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+  </body>
+</html>
